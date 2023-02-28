@@ -20,7 +20,10 @@ public class Lab {
      *
      * Check out this guide on throwing exceptions: https://rollbar.com/guides/java/how-to-throw-exceptions-in-java/#
      */
-    public void mustThrow() {
-
+int i = 0;
+    public void mustThrow() throws Exception{
+        if(i==0){
+            throw new Exception("Zero!");
+        }
     }
 }
